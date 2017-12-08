@@ -51,7 +51,6 @@ while True:
 agents = []
 
 #Create a 2D frame of the agents' environment - 
-#This seems to affect the axis not being saved on the image though?
 fig = matplotlib.pyplot.figure(figsize=(6, 6))
 ax = fig.add_axes([0, 0, 1, 1])
 
