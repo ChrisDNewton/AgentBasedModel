@@ -55,10 +55,12 @@ class Agent():
                 self.store = ave
                 agent.store = ave
                 #print("sharing " + str(dist) + " " + str(ave)) #statement to test if sharing works
-
+   
+    #Define a function for measuring distance between 2 agents via Pythagoras - 
     def distance_between(self, agent):
         return (((self.x - agent.x)**2) + ((self.y - agent.y)**2))**0.5            
-            
+
+    #Define __str__ as a way of returning an agent's location and current store -         
     def __str__(self):
         return "x = " + str(self.x) + ", y = " + str(self.y)
 
