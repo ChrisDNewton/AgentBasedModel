@@ -1,10 +1,18 @@
+"""
+Assessment 1: Agent Based Model - Agent class file
+GEOG5995 Programming for Social Scientists: Core Skills [Python]
+Leeds student number 201190819
+"""
+
+#Import the random library
 import random
-#define an agent class with an __init__ method - 
+
+#Define an agent class with an __init__ method - 
 class Agent():
     #initialise the agent, set the environment and its location - 
     def __init__ (self, environment, agent):
-        self.environment = environment
-        self.store = 0 # come back to this...
+        self.environment = environment # Set the agent's environment
+        self.store = 0 # Set the store to zero
         self.agent = agent        
         self.x = random.randint(0,300) #set a random x coordinate
         self.y = random.randint(0,300) #set a random y coordinate        
